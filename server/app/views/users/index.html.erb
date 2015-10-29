@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login and Registration</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container" style="width:850px">
+<div class="main">
+	<div class="register col-sm-6" style="width:400px">
+		<h1>Register</h1>
+
+		<form action="/products" method="post">
+			<input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+
+			<label for="name">Name: </label>
+			<input type="text" name="users[name]" id="name" class="form-control">
+
+			<label for="email">Email: </label>
+			<input type="text" name="users[email]" id="email" class="form-control">
+
+			<label for="password">Password: </label>
+			<input type="password" name="users[password]" id="password" class="form-control">
+
+			<label for="name">Password Confirmation: </label>
+			<input type="password" name="users[password_confirmation]"class="form-control"><br>
+
+			<button class="btn btn-info form-control">Register</button>
+		</form>	
+	</div>
+	<div class="login col-sm-6" style="width:400px">
+		<h1>Login</h1>
+		<form action="/sessions" method="post">
+			<input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+
+			<label>Email: </label>
+			<input type="text" name="sessions[email]" class="form-control">
+
+			<label>Password: </label>
+			<input type="password" name="sessions[password]" class="form-control"><br>
+
+			<button class="btn btn-success form-control">Login</button>
+		</form>
+	</div>
+</div>
+</div>
+
+</body>
+</html>
