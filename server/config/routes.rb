@@ -1,8 +1,41 @@
 Rails.application.routes.draw do
 
-  get 'users/index'
+  get 'sessions/new'
+  get 'sessions/destroy'
 
-  resources :products
+  # Load the Product Main Page
+  get '/products' => 'products#index'
+
+  # Load the Login/Registration Page
+  get '/users' => 'users#index'
+
+  # Create New User
+  post '/users' => 'users#new'
+
+  # Login and Registration
+  get 'sessions/index' => 'session#index'
+
+  # Go to specific product page
+  get 'products/:id' => 'products#show'
+
+  # Display the reviews of that product
+  get 'reviews/:id' => 'reviews#index'
+
+  # Post a review of that product
+  post 'review/:id' => 'reviews#new'
+
+  # Add the product to cart
+  post 'product/:id' => 'products#new'
+
+  # Delete the product in the cart
+  delete 'product/:id' => 'products#destroy'
+
+  # Submitting Purchase on Cart
+  post 'products/:id' => 'products#create'
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
