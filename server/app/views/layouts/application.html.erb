@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='myApp'>
 <head>
   <title>Ecommerce</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+  <%= javascript_include_tag 'application'%>
   <%= csrf_meta_tags %>
+  
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 </head>
-<body>
+<body ng-controller='productsController'>
 
-
-
-
-<%= yield %>
-
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">WE SELL STUFF!</a>
+	    </div>
+	    <div>
+	      <div class="nav navbar-nav navbar-right">
+	        <button class="login" type="button">Sign in</button> 
+	    </div>
+	  </div>
+	 </div>
+	</nav>
+	<%= yield %>
 </body>
 </html>

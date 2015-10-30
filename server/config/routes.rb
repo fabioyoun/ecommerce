@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+<<<<<<< HEAD
   get 'sessions/new'
   get 'sessions/destroy'
 
@@ -35,6 +36,10 @@ Rails.application.routes.draw do
 
 
 
+=======
+get 'users/index'
+root 'static_pages#index'
+>>>>>>> e9e68609796c1fed40ea32002f22a7b39c80f582
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

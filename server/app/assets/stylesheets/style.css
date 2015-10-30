@@ -1,0 +1,24 @@
+#header{
+	text-align: center;
+	/*display: inline-block;*/
+}
+	.login{
+		margin-top: 15px;
+	}
+.product_image{
+	width: 200px;
+	height: 200px;
+}
+
+.product{
+	display: inline-block;
+	width: 19%;
+}
+
+.product p{
+	text-align: center;
+}
+
+body{
+	padding-top: 70px;
+}
