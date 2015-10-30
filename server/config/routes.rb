@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  get 'users/index'
+get 'users/index'
+root 'static_pages#index'
 
   resources :products
   # The priority is based upon order of creation: first created -> highest priority.

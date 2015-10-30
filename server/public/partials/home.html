@@ -1,0 +1,15 @@
+<div class='container'>	
+		<!-- <div id="header">
+			<h1>WE SELL STUFF!</h1>
+			<button class="login" type="button">Sign in</button>
+		</div> -->
+		<div id="main">
+			<div class="product" ng-repeat='product in products'>
+				<a href="#"><img class="product_image" src="{{ product.url}}"></a>
+				<p>{{product.name}}</p>
+				<p>${{product.price}}</p>
+				<p>{{product.description}}</p>
+				<p>{{product.qty}}</p>
+			</div>
+		</div>
+</div>
