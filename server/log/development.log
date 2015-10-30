@@ -224,6 +224,41 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms)
 
 
+<<<<<<< HEAD
+Started GET "/" for 127.0.0.1 at 2015-10-29 16:04:14 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-29 16:04:31 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-29 16:04:35 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-29 16:05:04 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-29 16:05:40 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-10-29 16:05:50 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+=======
 Started GET "/" for 127.0.0.1 at 2015-10-29 15:25:55 -0700
 
 ActiveRecord::NoDatabaseError (FATAL:  database "ecommerce_development" does not exist
@@ -379,6 +414,7 @@ Completed 200 OK in 16ms (Views: 5.0ms | ActiveRecord: 0.0ms)
 Started GET "/favicon.ico" for 127.0.0.1 at 2015-10-29 15:39:01 -0700
 
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+>>>>>>> e9e68609796c1fed40ea32002f22a7b39c80f582
   actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
@@ -399,6 +435,67 @@ ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   rack (1.5.5) lib/rack/lock.rb:17:in `call'
   rack (1.5.5) lib/rack/content_length.rb:14:in `call'
   rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
+  /Users/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (214.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (17.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReviews (20151030042057)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReviews (20151030042057)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReviews (20151030042500)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (84.2ms)[0m  [1mCREATE TABLE "reviews" ("id" serial primary key, "content" text, "product_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.6ms)[0m  CREATE  INDEX  "index_reviews_on_product_id" ON "reviews"  ("product_id")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20151030042500"]]
+  [1m[35m (26.6ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mReview Load (1.0ms)[0m  [1mSELECT "reviews".* FROM "reviews"[0m
+  [1m[35mProduct Load (22.6ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."id" ASC LIMIT 1 OFFSET 2
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  [1m[35mReview Load (0.9ms)[0m  SELECT "reviews".* FROM "reviews"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "reviews" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["content", "This kept me hydrated in the nastiest places. Awesome!"], ["created_at", "2015-10-30 04:32:53.003039"], ["updated_at", "2015-10-30 04:32:53.003039"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mReview Load (1.1ms)[0m  SELECT  "reviews".* FROM "reviews"   ORDER BY "reviews"."id" ASC LIMIT 1
+  [1m[36mReview Load (0.8ms)[0m  [1mSELECT  "reviews".* FROM "reviews"   ORDER BY "reviews"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (0.6ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."id" ASC LIMIT 1 OFFSET 2
+  [1m[36m (9.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  UPDATE "reviews" SET "product_id" = $1, "updated_at" = $2 WHERE "reviews"."id" = 1  [["product_id", 3], ["updated_at", "2015-10-30 04:35:30.158519"]]
+  [1m[36m (16.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products"
+  [1m[36mReview Load (0.6ms)[0m  [1mSELECT "reviews".* FROM "reviews"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "reviews" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Contained every tool I needed to stay alive in the wild. Made skinning game easy"], ["created_at", "2015-10-30 04:38:52.914972"], ["updated_at", "2015-10-30 04:38:52.914972"]]
+  [1m[35m (9.3ms)[0m  COMMIT
+  [1m[36mReview Load (1.0ms)[0m  [1mSELECT  "reviews".* FROM "reviews"   ORDER BY "reviews"."id" ASC LIMIT 1 OFFSET 1[0m
+  [1m[35mProduct Load (1.2ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."id" ASC LIMIT 1 OFFSET 3
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "reviews" SET "product_id" = $1, "updated_at" = $2 WHERE "reviews"."id" = 2  [["product_id", 4], ["updated_at", "2015-10-30 04:39:13.735636"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "reviews" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Let there be light!"], ["created_at", "2015-10-30 04:40:11.566459"], ["updated_at", "2015-10-30 04:40:11.566459"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mReview Load (0.6ms)[0m  [1mSELECT  "reviews".* FROM "reviews"   ORDER BY "reviews"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT  "products".* FROM "products"   ORDER BY "products"."id" ASC LIMIT 1 OFFSET 4
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "reviews" SET "product_id" = $1, "updated_at" = $2 WHERE "reviews"."id" = 3  [["product_id", 5], ["updated_at", "2015-10-30 04:40:34.918264"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mReview Load (0.7ms)[0m  SELECT "reviews".* FROM "reviews"
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+=======
   /Users/fabioyoun/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
   /Users/fabioyoun/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
   /Users/fabioyoun/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
@@ -4552,6 +4649,7 @@ ActionController::RoutingError (No route matches [GET] "/%7B%7B%20product.url%7D
   Rendered /Users/fabioyoun/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
   Rendered /Users/fabioyoun/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
   Rendered /Users/fabioyoun/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (109.0ms)
+<<<<<<< HEAD
 
 
 Started GET "/" for 127.0.0.1 at 2015-10-30 10:24:06 -0700
