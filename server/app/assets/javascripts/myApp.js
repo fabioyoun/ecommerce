@@ -4,14 +4,17 @@ myApp.config(function($routeProvider){
 	$routeProvider
 		.when('/',{
 			templateUrl: '../partials/home.html'
+		})
+		.when('/login',{
+			templateUrl: '../partials/registration.html'
 		});
 })
 myApp.controller('productsController', function($scope, productsFactory){
 	$scope.products = [];
 
-	productsFactory.getProducts(function(product_data){
-		$scope.products = product_data
-	})
+	// productsFactory.getProducts(function(product_data){
+	// 	$scope.products = product_data
+	// })
 })
 
 myApp.factory('productsFactory', function($http){
